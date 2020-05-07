@@ -1,0 +1,671 @@
+
+/* ---------------------------------------- */
+/* == DÉFINITIONS DES POLICES*/
+/*---------------------------------------- */
+@font-face 
+{
+    font-family: 'fontawesomeregular';
+    src: url('polices/fontawesome-webfont-webfont.woff2') format('woff2'),
+         url('polices/fontawesome-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+ {
+    font-family: 'robotoblack';
+    src: url('polices/roboto-black-webfont.woff2') format('woff2'),
+         url('polices/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face
+ {
+    font-family: 'robotobold';
+    src: url('polices/roboto-bold-webfont.woff2') format('woff2'),
+         url('polices/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'robotomedium';
+    src: url('polices/roboto-medium-webfont.woff2') format('woff2'),
+         url('polices/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: 'robotoregular';
+    src: url('polices/roboto-regular-webfont.woff2') format('woff2'),
+         url('polices/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ---------------------------------------- */
+/* == ÉLÉMENTS PRINCIPAUX */
+/*---------------------------------------- */
+body
+{
+	font-family: 'robotoregular', Arial, sans-serif;
+	color: grey;
+	margin: auto;
+	width: 100%;
+}
+#bloc-page
+{
+ width: 100%;
+}
+/*.......... LES TITRES ..........*/
+  h2
+ {
+ 	font-family: 'robotobold', Arial, sans-serif;
+ 	text-align: center;
+ 	color: black;
+ }
+ h1, h3
+ {
+ 	font-family: 'robotomedium', Arial, sans-serif;
+ }
+ /*.......... RACCOURCI ..........*/
+.text_center
+{
+	text-align: center;
+}
+.text_justify
+{
+	text-align: justify;
+}
+.mar_auto
+{
+	margin: auto;
+}
+.font_small
+{
+	font-size: small;
+}
+.font_medium
+{
+	font-size: medium;
+}
+.display_row
+{
+	display: flex;
+	flex-direction: row;
+}
+.display_column
+{
+	display: flex;
+	flex-direction: column;
+}
+.colorblue
+{
+	color: rgb(92, 173, 211);
+}
+.colorblack
+{
+	color: black
+}
+img
+{
+	width: 100%;
+	height:auto;
+}
+.word_break
+{
+	word-wrap: break-word;
+}
+.mtop0
+{
+	margin-top: 0;
+} 
+.mbot0
+{
+	margin-bottom: 0;
+}
+.pad20px
+{
+	padding: 20px;
+}
+/*....... Règles communes rond trait........*/
+.rond_trait
+{
+	display: flex;
+	justify-content: center;
+	height: 8px;
+	padding-bottom: 15px;
+}
+.traitd,.traitg
+{
+  border-bottom:1px solid rgba(205,205,205,0.8);
+  width: 50px;
+}
+.fa-circle
+{
+  color: rgb(0,157,225);
+} 
+/* ---------------------------------------- */
+/* == HEADER */
+/*---------------------------------------- */
+/*........ 1) Barre (fixe et position) ........*/
+header
+{
+	position: fixed; 
+	top: 0;
+	background-color: white;
+	width: 100%;
+	padding-top: 10px;
+	z-index: 999;
+}
+/*.......... 1.1) Logo..........*/
+#logo
+{
+	width: 70%;
+	margin: auto;
+}
+/*.......... 1.2) Menu (position, taille, couleur)........*/
+nav ul
+{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	padding-left: 0;
+}
+nav a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+}
+/* ---------------------------------------- */
+/* == ACCEUIL */
+/*---------------------------------------- */
+/*.......... Slider 1 (apparait moons de 500px) ........*/
+#acceuil .slider_1
+{
+	padding-top: 120px;
+	text-align: center;
+}
+/*.......... Bouton plus d'infos..........*/
+#acceuil .bouton_info
+{
+	padding: 5px 10px 5px 10px;
+    background-color: rgb(92, 173, 211);
+    box-shadow: 3px 3px 0 rgb(0, 118, 178);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+/*......... Slider 2 (n'apparaitra pas en dessous de 500px )........*/
+#acceuil .slider_2
+{
+	display: none;
+}
+/*.........Trait bleu bottom.......*/
+#acceuil .trait-bleu
+{
+	border-bottom: 3px solid rgb(92, 173, 211);
+	width: 8%;
+    position: absolute;
+    bottom: 0%;
+}
+/* ---------------------------------------- */
+/* == SERVICES */
+/*---------------------------------------- */
+ /*..........3) Service tout le contenu.......*/
+ section .services
+{
+	height: 100%;
+}
+/* ......... 3.1) Titre et ligne dessous.......*/
+.title
+{
+	padding-bottom: 20px;
+}
+/*.......... 3.2) Sous partie image ordi ..........*/
+.img_aside
+{
+	font-size: 0.9em;
+	display: flex;
+}
+.img_aside .image
+{
+	display: none;
+	width: 510px;
+   	height: 319px;
+}
+/*......... 3.3) Sous partie paragraphe (UX...), logo..........*/
+aside
+{
+	width: 500px;
+}
+
+.UX, .UI, .SEO
+{
+	display: flex;
+	margin: 0;
+	width: 100%;
+}
+.UX .descrip, .UI .descrip, .SEO .descrip
+{
+	display: flex;
+	flex-direction: column;
+	padding: 5px 20px;
+	margin-right: 30px;
+}
+		/*........logo.........*/
+.cercle
+ {
+ 	border: 1px solid grey;
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    position: relative;
+    right: 0px;
+    top: 8px;
+    visibility: hidden;
+ }
+ .fa-chart-line, .fa-cubes, .fa-chart-pie
+ {
+ 	font-size: 2.5em;
+ 	color: rgb(0, 157, 225);
+ }
+ aside .fa-circle
+ {
+ 	position: absolute;
+ 	top: 24px;
+ 	right: -6px;
+ }
+/* ---------------------------------------- */
+/* == NOS PROJETS */
+/*---------------------------------------- */
+ /*.......... 4) Projet tout le contenu.......... */												
+ .portfolio
+ {
+ 	background-color: rgb(230,230,230);
+ 	padding-top: 10px;
+ 	display: flex;
+ 	flex-direction: column;
+ }
+ .portfolio p
+ {
+ 	margin-left: 2px;
+ }
+ /*..........4.1) Menu .........*/
+.menu_fol 
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+        /*........bouton active.........*/
+.blue
+{
+	color: white;
+	background-color:rgb(0, 157, 225);
+	box-shadow: 0px 3px 0px rgb(0, 118, 178);
+	border-radius: 3px;
+	padding: 10px 7px;
+	font-size: 0.9em;
+	position: relative;
+	width: 63px;
+}
+		/*........ Le petit triangle........*/
+.fa-caret-down
+{
+	position: absolute;
+	top: 33px;
+	left: 40%;
+	color: rgb(0, 118, 178);
+	font-size: 1.5em;
+}
+		/*......... Bouton gris ..........*/
+.grey
+{
+	background-color: rgb(205,205,205);
+	color: black;
+	box-shadow: 2px 2px 2px rgb(195, 195, 195);
+	border-radius: 3px;
+	padding: 10px 7px;
+	font-size: 0.9em;
+	width: 63px;
+}
+		/*.......... Survole devient blue..........*/
+.grey:hover
+{
+	position: relative;
+	color: white;
+	background-color:rgb(0, 157, 225);
+	box-shadow: 0px 3px 0px rgb(0, 118, 178);
+	border-radius: 3px;
+}
+/*..........4.2) Sous partie images, description  et logo (fas fa)........*/											
+		/*......... alignement image (column moins de 500px.......*/
+.imgport
+{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.imgport p
+{
+	margin-top: 0;
+	margin-left: 12px;
+}
+.imgport h4
+{
+	margin-bottom: 2px;
+	margin-left: 12px;
+	margin-top: 5px;
+}
+		/*.........Figure (image) ........*/
+figure
+{
+	height:190px;
+	width: 290px;
+	margin: 15px;
+	position: relative;
+}
+		/*........ Survole de la description......*/
+figure:hover figcaption
+{
+	visibility: visible;
+}
+		/*........ La description (emplacement).........*/
+.imgport figcaption
+{
+	visibility: hidden;
+	width: 100%;
+	height: 36%;
+	position: absolute;
+	bottom: -2%;
+	background-color: rgba(97,97,97,0.7);
+	color: white;
+}
+		/*......... logo oeil fas fa (emplacement,couleur)........*/
+figcaption .fa-eye
+{
+	color: white;
+    position: absolute;
+    bottom: 68%;
+    right: 7%;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(0, 157, 225);
+}
+
+/* ---------------------------------------- */
+/* == CONTACT */
+/*---------------------------------------- */
+/*......... La carte  caché moins de 500px........*/
+iframe
+{
+	display: none;
+	border:0;
+}
+
+/*.......... partie qui englobe le 'formulaire'.......*/
+#formu
+{
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+}
+/*........ bouton ........*/
+.bouton_envoye
+{
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(92, 173, 211);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    width: 30%;
+}
+/*......... Nom, Mail, Subject.....*/
+input
+{
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 95%;
+	border:1px solid grey;
+}
+/*.........Message.........*/
+textarea
+{
+	border:1px solid grey;
+	font-family: 'robotoregular', Arial, sans-serif;
+	width: 97%;
+	height:90px; 
+}
+/* ---------------------------------------- */
+/* == MEDIA QUERIES 								560px*/
+/*---------------------------------------- */
+@media only screen and (min-width: 560px) 
+{
+/* ---------------------------------------- */
+/* == ÉLÉMENTS PRINCIPAUX */
+/*---------------------------------------- */
+	.slider_2, .services, .portfolio
+	{
+		padding-bottom: 30px;
+	}
+	/* ---------------------------------------- */
+/* == HEADER */
+/*---------------------------------------- */
+/*........ 1) Barre ( postion) ........*/
+	header
+	{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	header nav
+	{
+		width: 300px;
+	}
+	#logo
+	{
+		width: auto;
+		margin:0 ;
+	}
+	/*........ survole trait bleu.......*/
+	header ul a:hover
+	{
+		border-top: 3px solid rgb(0,157,225);
+		padding-top: 26px;
+		color: rgb(0,157,225);
+	}
+	/* ---------------------------------------- */
+/* == ACCEUIL */
+/*---------------------------------------- */
+	/*........ slider1 disparait.....*/
+	.slider_1
+	{
+		display: none;
+	}
+	/*....... slider 2 (position).....*/
+	#acceuil .slider_2
+	{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 320px;
+		padding-top: 65px;
+	}
+	/*......... figcaption (tout les éléments).......*/
+	.slider_2 figcaption
+	{
+   		width: 100%;
+    	color: white;
+    	font-size: 1.1em;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+	}
+	.slider_2 figcaption p
+	{
+		margin-bottom: 30px;
+	}
+	.slider_2 figure
+	{
+		width: 100%;
+		margin: 0;
+		display: flex;
+    	background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-image: url('images/2acceuil/bg1.jpg');
+  		height: 100%;
+	}
+	#texte
+	{
+		width: 40%;
+		margin-right: 40%;
+	}
+	/*........ Fléches slider........*/
+	.che_gauche
+	{
+		border-radius: 0 25px 25px 0;
+	}
+	.che_droite
+	{
+		border-radius: 25px 0 0 25px;
+	}
+	.general
+	{
+		color: white;
+		font-size: 1.1em;
+   		width: 30px;
+    	height: 50px;
+    	background-color: rgba(0, 0, 0, 0.2);
+    	display: flex;
+   		justify-content: center;
+    	align-items: center;
+    	text-decoration:none;
+    }
+/* ---------------------------------------- */
+/* == SERVICES */
+/*---------------------------------------- */
+	aside
+	{
+		width: 556px;
+	}
+	/*.......... Disposition des deux élément (retour à la ligne)........*/
+	.img_aside
+	{
+		display: flex;
+   		 flex-wrap: wrap;
+   		 justify-content: space-around;
+   		 margin-bottom: 30px;
+	}
+	/*....... image ordi apparition.......*/
+	.img_aside .image
+	{
+		display: block;
+	}
+	/*.......... Les logos réapparaisse.......*/
+	.cercle
+	{
+		visibility: visible;
+	}
+	.UX .descrip, .UI .descrip, .SEO .descrip
+	{
+		width: 75%;
+		margin: 0;
+	}
+/* ---------------------------------------- */
+/* == NOS PROJETS */
+/*---------------------------------------- */
+/* ....... disposition des images.......*/
+	.imgport
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 50px;
+		justify-content: center;
+	}
+/* ---------------------------------------- */
+/* == CONTACT */
+/*---------------------------------------- */
+	.contact
+	{
+		position: relative;
+	}
+	/*........ carte apparition.......*/
+	iframe
+	{
+		display: block;
+		width: 100%;
+		z-index: 1;
+	}
+	/*....... fond bleu .........*/
+	#map_formu
+	{
+		width: 100%;
+		height: 600px;
+		background-color: rgba(92, 173, 211,0.3);
+		position: absolute;
+		top: 0;
+		z-index: 2;
+	}
+	textarea
+	{
+		height: 160px;
+	}
+	#formu
+	{
+		width: 25%;
+		margin-left: 64%;
+   		margin-top: 4%;
+   		z-index: 3;
+	}
+}
+/* ---------------------------------------- */
+/* == MEDIA QUERIES 								560px à 745px*/
+/*---------------------------------------- */
+/*......... Disparisition du bouton et rétrécissement polices acceuil......*/
+@media only screen and (min-width: 560px) and (max-width: 765px)
+{
+	#acceuil .slider_2
+	{
+		height: 280px;
+	}
+	#texte 
+	{
+		font-size: 0.9em;
+		top: 17%;
+		left: 7%;
+		width: 45%;
+	}
+}
+/* ---------------------------------------- */
+/* == MEDIA QUERIES 								1025px*/
+/*---------------------------------------- */
+@media only screen and (min-width: 1025px) 
+{
+	/* ---------------------------------------- */
+/* == ÉLÉMENTS PRINCIPAUX */
+/*---------------------------------------- */
+/*......... Petite modification taille et marge #texte.......*/
+	.slider_2 h1
+	{
+		margin-bottom: 0;
+	}
+	#acceuil .slider_2
+	{
+		height: 525px;
+	}
+	#texte
+	{
+		font-size: 1.5em;
+		margin-right: 35%;
+	}
+}
+
